@@ -38,8 +38,7 @@ mv paramatrix /bin/bash```
 
 Alternatively, install directly using:
 
-``` go install github.com/Karthik-HR0/paramatrix@latest
-```
+``` go install github.com/Karthik-HR0/paramatrix@latest ```
 
 # Usage
 
