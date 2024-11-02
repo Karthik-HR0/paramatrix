@@ -30,10 +30,11 @@ Paramatrix is a powerful tool for bug bounty hunters, penetration testers, and d
 # Installation
 
 To get started with Paramatrix, make sure you have Go installed. Then, clone the repository and build it:
-```git clone https://github.com/Karthik-HR0/paramatrix ``
-cd paramatrix
+```git clone https://github.com/Karthik-HR0/paramatrix ```
+``
+cd paramatrix 
 go build -o paramatrix
-mv paramatrix /usr/bin```
+mv paramatrix /usr/bin ``
 
 
 Alternatively, install directly using:
