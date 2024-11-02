@@ -33,7 +33,7 @@ To get started with Paramatrix, make sure you have Go installed. Then, clone the
 ```git clone https://github.com/Karthik-HR0/paramatrix ``
 cd paramatrix
 go build -o paramatrix
-mv paramatrix /bin/bash```
+mv paramatrix /usr/bin```
 
 
 Alternatively, install directly using:
