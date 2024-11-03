@@ -13,8 +13,9 @@
   <a href="#contributing">🤝 Contributing</a> •
 </p>
 
+![paramatrix png](https://github.com/user-attachments/assets/6775989d-222c-46cc-be5a-68bc0142a2e3)
 
-![paramatrix](https://github.com/user-attachments/assets/92e2b685-285d-4151-a95d-2fd7ca21b56f)
+
 
 ## About
 
