@@ -35,10 +35,10 @@
 
 ## Installation
 
-To install `paramspider`, follow these steps:
+To install `paramatrix`, follow these steps:
 
 ```sh
-git clone https://github.com/Karthik&HR0/paramatrix
+git clone https://github.com/Karthik-HR0/paramatrix
 cd paramatrix
 go build -o paramatrix
 sudo cp -r paramatrix /usr/bin/
