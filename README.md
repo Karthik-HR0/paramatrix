@@ -45,9 +45,13 @@ go build -o paramatrix
 sudo cp -r paramatrix /usr/bin/
 ```
 # Direct installation 
-``` go install github.com/Karthik-HR0/paramatrix@latest```
-`` cd go/bin
-sudo cp -r paramatrix /usr/bin/ ``
+``` 
+go install github.com/Karthik-HR0/paramatrix@latest
+```
+`` 
+cd go/bin
+sudo cp -r paramatrix /usr/bin/ 
+``
 
 ## Usage
 
