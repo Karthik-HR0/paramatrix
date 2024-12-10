@@ -15,6 +15,8 @@
 ## Overview
 **Paramatrix** is a powerful tool designed for bug bounty hunters, penetration testers, and developers interested in web security. It fetches URLs associated with a specific domain (or list of domains) directly from the Wayback Machine. By filtering out "boring" URLs, it allows you to focus on those with parameters—ideal for fuzzing, security probing, and collecting insights.
 
+---
+
 ### Key Features
 - **Wayback Archive Mining**: Fetch URLs directly from the Internet Archive’s Wayback Machine.
 - **URL Filtering**: Ignores common static files, such as `.jpg`, `.css`, etc., providing you with URLs that are more likely to be interesting for testing.
@@ -26,13 +28,12 @@
 ---
 
 
----
 
 ## installation 
 ```bash 
 go install github.com/Karthik-HR0/paramatrix@latest
 ```
-
+---
 # Uses Examples
 
 Get started with some practical scenarios for using Paramatrix:
