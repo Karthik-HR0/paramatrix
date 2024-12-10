@@ -1,23 +1,14 @@
-<h1 align="center">
-    paramatrix
-  <br>
-</h1>
+<h1 align="center">paramatrix</h1>
 
-<h4 align="center">  Mining URLs from dark corners of Web Archives for bug hunting/fuzzing/further probing </h4>
+> **paramatrix**  - Mining URLs from the hidden corners of Wayback Archives for bug hunting, fuzzing, and security probing.
+---
 
-<p align="center">
-  <a href="#about">📖 About</a> •
-  <a href="#installation">🏗️ Installation</a> •
-  <a href="#usage">⛏️ Usage</a> •
-  <a href="#examples">🚀 Examples</a> •
-  <a href="#contributing">🤝 Contributing</a> •
-</p>
+
+  
 
 ![paramatrix png](https://github.com/user-attachments/assets/6775989d-222c-46cc-be5a-68bc0142a2e3)
+---
 
-
-
-## About
 
 `paramatrix` allows you to fetch URLs related to any domain or a list of domains from Wayback achives. It filters out "boring" URLs, allowing you to focus on the ones that matter the most.
 
@@ -34,77 +25,115 @@
 
 ---
 
-## Installation
-
-To install `paramatrix`, follow these steps:
-
-```sh
-git clone https://github.com/Karthik-HR0/paramatrix
-cd paramatrix
-go build -o paramatrix
-sudo cp -r paramatrix /usr/bin/
-```
-# Direct installation 
-``` 
-go install github.com/Karthik-HR0/paramatrix@latest
-```
-`` 
-cd go/bin
-sudo cp -r paramatrix /usr/bin/ 
-``
-
-## Usage
-
-Paramatrix offers flexible options for fetching and processing URLs:
-
-` paramatrix -d example.com `
-
-Command-Line Options
-
--d DOMAIN: Specify a single domain to fetch URLs for.
-
--l LIST: Provide a file with a list of domains (one per line).
-
--s: Stream URLs to the terminal in real-time.
-
---proxy PROXY: Use a specified proxy for HTTP requests.
-
--p PLACEHOLDER: Set a custom placeholder for parameter values in URLs (default is "FUZZ").
-
-
 
 ---
 
-# Examples
+## installation 
+```bash 
+go install github.com/Karthik-HR0/paramatrix@latest
+```
+
+# Uses Examples
 
 Get started with some practical scenarios for using Paramatrix:
 
 Fetch URLs for a Single Domain:
 
-` paramatrix -d example.com `
+```bash
+paramatrix -d example.com
+ ```
 
 Fetch URLs for Multiple Domains from a File:
 
-` paramatrix -l domains.txt `
+ ```bash
+paramatrix -l domains.txt
+ ```
 
 Stream URLs in Real-Time to the Terminal:
 
-` paramatrix -d example.com -s `
+``` bash
+paramatrix -d example.com -s
+ ```
 
 Use a Proxy for Web Requests:
 
-` paramatrix -d example.com --proxy '127.0.0.1:8080' `
+```bash
+paramatrix -d example.com --proxy '127.0.0.1:8080'
+```
 
 Customize Placeholder for Parameter Values:
 
-`paramatrix -d example.com -p '<injection>'`
+```bash
+paramatrix -d example.com -p "<injection>"
+```
 
-
+<h3>Arguments</h3><table>
+  <thead>
+    <tr>
+      <th>Argument</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>-d DOMAIN</code></td>
+      <td>Specify a single domain to fetch URLs for</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><code>-l LIST</code></td>
+      <td>Provide a file with a list of domains (one per line)</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><code>-s</code></td>
+      <td>Stream URLs in real-time to the terminal</td>
+      <td><code>false</code></td>
+    </tr>
+    <tr>
+      <td><code>--proxy PROXY</code></td>
+      <td>Use a specified proxy for HTTP requests</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td><code>-p PLACEHOLDER</code></td>
+      <td>Set a custom placeholder for parameter values</td>
+      <td><code>FUZZ</code></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
+```
+./paramatrix
 
-## 🤝 Contributing
 
-We welcome contributions from the community! To contribute, please fork the repository, make your changes, and submit a pull request. Feel free to report issues or suggest new features to enhance Paramatrix.
 
-Happy hacking and happy hunting!
+__________                         _____          __         .__
+\______   \_____ ____________     /     \ _____ _/  |________|__|__  ___
+ |     ___/\__  \\_  __ \__  \   /  \ /  \\__  \\   __\_  __ \  \  \/  /
+ |    |     / __ \|  | \// __ \_/    Y    \/ __ \|  |  |  | \/  |>    <
+ |____|    (____  /__|  (____  /\____|__  (____  /__|  |__|  |__/__/\_ \
+                \/           \/         \/     \/                     \/
+
+
+                                              with <3 by @Karthik-HR0
+
+usage: paramatrix [-h] [-d DOMAIN] [-l LIST] [-s] [--proxy PROXY] [-p PLACEHOLDER]
+
+Mining URLs from dark corners of Web Archives
+
+options:
+  -h, --help            show this help message and exit
+  -d DOMAIN, --domain DOMAIN
+                        Domain name to fetch related URLs for.
+  -l LIST, --list LIST  File containing a list of domain names.
+  -s, --stream          Stream URLs on the terminal.
+  --proxy PROXY         Set the proxy address for web requests.
+  -p PLACEHOLDER, --placeholder PLACEHOLDER
+                        placeholder for parameter values
+```
+<p align="center">
+Built with ❤️ by <a href="https://github.com/Karthik-HR0">@Karthik-HR0</a>
+</p>
